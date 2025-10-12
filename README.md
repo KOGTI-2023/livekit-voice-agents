@@ -392,5 +392,3 @@ Bei Fragen oder Problemen:
 
 Viel Erfolg! 🚀
 ```
-
-Willst du noch etwas anpassen oder ergänzen?
