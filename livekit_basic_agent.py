@@ -17,11 +17,10 @@ import os
 load_dotenv(".env")
 
 class Assistant(Agent):
-    """Basic voice assistant with Airbnb booking capabilities."""
 
     def __init__(self):
         super().__init__(
-            instructions="""Du bist ein freundlicher und hilfreicher Assistent"""
+            instructions="""Du bist ein freundlicher und hilfreicher Assistent."""
         )
 
 
@@ -40,11 +39,6 @@ async def entrypoint(ctx: agents.JobContext):
     await session.start(
         room=ctx.room,
         agent=Assistant()
-    )
-
-    # Generate initial greeting
-    await session.generate_reply(
-        instructions="Greet the user warmly and ask how you can help."
     )
 
 if __name__ == "__main__":
