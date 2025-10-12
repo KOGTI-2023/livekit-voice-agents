@@ -1,4 +1,4 @@
-# LiveKit Voice Agents - Deutsche Version
+# LiveKit Voice Agents 
 
 Drei verschiedene LiveKit Voice AI Agents für unterschiedliche Anwendungsfälle - von einfach bis DSGVO-konform.
 
