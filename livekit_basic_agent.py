@@ -29,7 +29,7 @@ async def entrypoint(ctx: agents.JobContext):
 
     # Configure the voice pipeline with the essentials
     session = AgentSession(
-        stt=deepgram.STT(model="nova-2"),
+        stt=deepgram.STT(model="nova-2", language="de"),
         llm=openai.LLM(model=os.getenv("LLM_CHOICE", "gpt-4.1-mini")),
         tts=openai.TTS(voice="echo"),
         vad=silero.VAD.load(),
