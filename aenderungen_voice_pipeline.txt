@@ -1,0 +1,15 @@
+#(original)
+session = AgentSession(
+        stt=deepgram.STT(model="nova-2", language="de"),
+        llm=openai.LLM(model=os.getenv("LLM_CHOICE", "gpt-4.1-mini")),
+        tts=openai.TTS(voice="echo"),
+        vad=silero.VAD.load(),
+)
+
+#(neu_realtime_mini)
+session = AgentSession(
+    llm=openai.realtime.RealtimeModel(
+        model="gpt-realtime-mini", # oder "gpt-realtime" für das bessere Modell
+        voice="echo", # oder "marin", "cedar" (neue Stimmen)
+        temperature=0.8,
+    )
