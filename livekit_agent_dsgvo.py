@@ -32,7 +32,7 @@ class TelephonyAssistant(Agent):
         Args:
             message: Die Nachricht oder Frage die gesendet werden soll
         """
-        webhook_url = os.getenv("N8N_WEBHOOK_URL")
+        webhook_url = "hier deine Webhook Url rein machen"
         
         try:
             async with httpx.AsyncClient(timeout=30.0) as client:
