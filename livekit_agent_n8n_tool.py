@@ -37,7 +37,7 @@ class Assistant(Agent):
         Args:
             message: Die Nachricht oder Frage die gesendet werden soll
         """
-        webhook_url = "https://n8n.flowbert.xyz/webhook/1aa52fa5-ac8c-4a28-909f-4abb51a12bd1"
+        webhook_url = "hier deine Webhook Url rein machen"
         
         try:
             async with httpx.AsyncClient(timeout=10.0) as client:  # <- 10 Sekunden Timeout
